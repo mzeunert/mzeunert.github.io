@@ -1,1 +1,242 @@
-Hello World
+<!Doctype html>
+<html>
+<head>
+	<title>Michael Zeunert</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.container{
+			max-width: 1000px;
+		}
+		.content-container{
+			padding-top: 71px;			
+		}
+		.projects img{
+			width: 100%
+		}
+		.projects video{
+			width: 100%
+		}
+		.videoWrapper {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			padding-top: 25px;
+			height: 0;
+		}
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.projects .row{
+			margin-bottom: 30px; 
+		}
+		#projects{
+			margin-bottom: 30px;
+		}
+		h3 {
+			margin-top: 0px;
+		}
+		h2 {
+			position: relative;
+		}
+		h2 a{
+			position: absolute;
+			top: -71px;
+		}
+		.technologies {
+			float: left; border: 1px solid #ddd; margin-right: 4px; padding: 4px; line-height: 12px; border-radius: 0.8em; background-color: #222; color:#fff; 
+		}
+		.person-header {
+			padding-top: 20px;
+			padding-bottom: 40px; 
+		}
+		h2 {
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 24px;
+		}
+		.img-wrapper {
+		  float: left;
+		  width: 30px;
+		  text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+<!-- 				<a class="navbar-brand" href="#">Project name</a>
+-->			</div>
+<div id="navbar" class="collapse navbar-collapse">
+	<ul class="nav navbar-nav">
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#intro">Intro</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="#outro">Outro</a></li>
+	</ul>
+</div><!--/.nav-collapse -->
+</div>
+</nav>
+<div class="content-container container">
+	<div class="page-header">
+		<h1>Michael Zeunert, M. Sc. Intelligent Systems</h1>
+		<p>Machine Learning, Computer Vision and Human Computer Interaction</p>
+	</div>
+
+	<h2><a id="intro"></a>Intro</h2>
+	<div class="row">
+		<div class="col-md-6">
+			<p>I'm a computer scientist with a Master's degree in Intelligent Systems from the University of Bielefeld. My field of interests are machine learning, computer vision and augmented reality. Lately I'm also interested in the field of Data Science, which is from a technological point of view. Thus I also have some experience in Apache Big Data products. In my free time I like to do various sports or I play around with the Raspberry Pi, web technologies and game engines.</p>
+		</div>
+		<div class="col-md-6">
+			<img style="height: 25px" src="images/user-card.png"></img><a href="./data/CV_mzeunert.pdf">CV</a><br>
+			<img style="height: 25px" src="images/github.png"></img><a href="https://github.com/mzeunert">Github</a><br>
+			<img style="height: 25px" src="images/xing.png"></img><a href="https://www.xing.com/profile/Michael_Zeunert2">Xing</a>
+		</div>
+	</div>
+	<div class="projects">
+		<h2><a id="projects"></a>Projects</h2>
+		<!-- ################################ Master theis -->
+		<div class="row">
+			<div class="col-md-5">
+				<img src="images/masterThesis01.JPG" >
+			</div>
+			<div class="col-md-7">
+				<h3>Master's thesis (2014/15)</h3>
+				<p>
+					In my Master's thesis I did developed a computer vision solution which allowed the user to interact with his hands in the virtual world. The work is based on the Oculus Rift DK1/DK2 and a pair of consumer webcams. The core questions of the thesis are, what requirements are necessary to implement a hand-interaction system for a virtual environment. As using cheap webcams is very challenging, I also used the Leap Motion as a baseline. Therefore the algorithms were tested against the Leap Motion detection and against my own algorithms on the Leap Motion images.
+				</p>
+				<div>
+					<div class="technologies">Python</div>
+					<div class="technologies">OpenCV</div>
+					<div class="technologies">Java</div>
+					<div class="technologies">Instant Reality</div>
+					<div class="technologies">Computer Vision</div>
+					<div class="technologies">HCI</div>
+				</div>
+			</div>
+		</div>
+		<!-- ################################ AudEye -->
+		<div class="row">
+			<div class="col-md-5">
+				<video poster="./images/audeye.JPG" controls>
+					<source src="./videos/test3.mp4" type="video/mp4">
+
+						Your browser does not support the video tag.
+					</video>
+
+				</div>
+				<div class="col-md-7">
+					<h3>AudEye (2013)</h3>
+					<p>
+						The AudEye project is a software that assists the user while playing chess. We constructed a system
+						in which this player wears eye-tracking glasses (ETG)
+						and an ear-piece. The ETG record both his eye movements
+						and the chess scene itself. This input is then processed, including
+						image recognition to obtain the state of the game.
+						The player communicates with the system by executing eye
+						gestures. In this way he can control the system and request
+						hints for good moves which are calculated by a chess engine.
+						He may also choose to be informed about the usefulness
+						of executing a move with the chess piece he looks
+						at. These values are made audible by the means of sonification.
+						Additionally, a player-vs-computer mode was implemented,
+						the game's protocol is saved and several statistics
+						are collected.
+					</p>
+					<p><a href="http://www.techfak.uni-bielefeld.de/isy-praktikum/WS12SS13/AUDEYE/">Official project link</a></p>
+					<div>
+						<div class="technologies">C++</div>
+						<div class="technologies">Eyetracking</div>
+						<div class="technologies">Computer Vision</div>
+						<div class="technologies">Human Computer Interaction</div>
+						<div class="technologies">Software engineering</div>
+						<div class="technologies">RSB</div>
+					</div>
+				</div>
+			</div>
+			<!-- ################################ Robocup -->
+			<div class="row">
+				<div class="col-md-5">
+					<div class="videoWrapper">
+						<iframe src="http://www.youtube.com/embed/p1bkFZVItDY?start=58" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<h3>Robocup (2012)</h3>
+					<p>
+						As a team-member of the <a href="http://aiweb.techfak.uni-bielefeld.de/ToBI">Team ToBi</a>  I participated the Robocup competition in the Robocup@home league which was held in Mexcico City. The task of our team was to improve the robots capabilities on the one hand, where i worked on the Object Detection, and on the tasks the robot has to perform during the competition on the other hand. Therefore we learned a lot about the complexity of a robotic system and also gained insight into the single subproblems like object detection or speech recognition. We were able to reach the finals (Video shows finals demo) and achieved a 3rd place out of ca. 20 Teams.
+					</p>
+					<p><a href="hhttp://aiweb.techfak.uni-bielefeld.de/ToBI">ToBI homepage</a></p>
+					<div>
+						<div class="technologies">C++</div>
+						<div class="technologies">Java</div>
+						<div class="technologies">Linux</div>
+						<div class="technologies">Robotics</div>
+						<div class="technologies">Software engineering</div>
+					</div>
+				</div>
+			</div>
+			<!-- ################################ Game Nihili -->			
+			<div class="row">
+				<div class="col-md-5">
+					<div class="videoWrapper">
+						<iframe src="http://www.youtube.com/embed/XXFp36mikPc?start=58" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<h3>Game Nihili (2012)</h3>
+					<p>
+						I developed the game 'Nihil' with a 5-man crew during the university course Game Engineering. It is a Real-time strategy game based on the Unity3D engine. The development teached us a lot about software development in a team and overcomming unexpected problems. We also had to learn how to model, texture and animate 3D-Models. 
+					</p>
+					<div>
+						<div class="technologies">C#</div>
+						<div class="technologies">Unity 3D</div>
+						<div class="technologies">Autodesk Maya</div>
+						<div class="technologies">Autodesk 3ds max</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h2><a id="outro"></a>Outro</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Bla.</p>
+				<div style="height:800px">
+					dont need this?
+				</div>
+			</div>
+			<div class="col-md-6">
+				<a href="http://www.latextemplates.com/wp-content/uploads/2015/01/cv_13.png">CV</a><br>
+				<a href="https://github.com/mzeunert">Github</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).on("scroll", function(){
+				var scrollTop = $(window).scrollTop();
+				$("a[id]").each(function(i, el){
+					var top = $(el).offset().top;
+					if(scrollTop >= top){
+						$(".nav a").parent().removeClass("active");
+
+						var id = $(el).attr("id");
+						$(".nav a[href='#" + id + "']").parent().addClass("active");
+					};
+				});
+			})
+		});
+	</script>
+</body>
+</html>
